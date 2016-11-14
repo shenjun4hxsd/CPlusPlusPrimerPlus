@@ -41,7 +41,7 @@
     cout << "What's next?\n";
 ```
 
-
+&emsp;&emsp;`\n` 被视为一个字符，名为换行符。
 
 
 
