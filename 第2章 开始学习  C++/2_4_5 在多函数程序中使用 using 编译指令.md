@@ -2,6 +2,8 @@
 
 &emsp;&emsp;`cout` 位于名称空间 `std` 中。
 
+&emsp;&emsp;● 将 `using namespace std` 放在函数定义之前，让文件中所有的函数都能够使用名称空间 `std` 中所有的元素。
+
 ```javascript
     #include <iostream>
     using namespace std;
@@ -24,4 +26,3 @@
     }
 ```
 
-&emsp;&emsp;● 将 `using namespace std` 放在函数定义之前，让文件中所有的函数都能够使用名称空间 `std` 中所有的元素。
