@@ -26,3 +26,4 @@
     }
 ```
 
+&emsp;&emsp;● 将 `using namespace std` 放在特定的函数定义中，让该函数能够使用名称空间 `std` 中的所有元素。
