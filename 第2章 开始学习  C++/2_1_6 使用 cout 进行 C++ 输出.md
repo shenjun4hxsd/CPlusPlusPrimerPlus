@@ -16,4 +16,6 @@
 
 ####&emsp;&emsp;1. 控制符 endl
 
-
+```javascript
+    cout << endl;
+```
