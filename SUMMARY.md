@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
 * [第1章 预备知识](第1章-预备知识.md)
     * 1.1 C++ 简介
     * 1.2 C++ 简史
