@@ -27,3 +27,24 @@
 ```
 
 &emsp;&emsp;● 将 `using namespace std` 放在特定的函数定义中，让该函数能够使用名称空间 `std` 中的所有元素。
+
+```javascript
+    #include <iostream>
+    int stonetolb(int);
+    int main()
+    {
+        using namespace std;
+        int stone;
+        cout << "Enter the weight in stone: ";
+        cin >> stone;
+        int pounds = stonetolb(stone);
+        cout << stone << " stone = ";
+        cout << pounds << " pounds." << endl;
+        return 0;
+    }
+```
+
+
+
+
+
