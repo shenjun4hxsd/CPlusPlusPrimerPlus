@@ -42,6 +42,11 @@
         cout << pounds << " pounds." << endl;
         return 0;
     }
+
+    int stonetolb(int sts)
+    {
+        return 14 * sts;
+    }
 ```
 
 
