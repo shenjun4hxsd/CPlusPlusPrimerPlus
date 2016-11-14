@@ -4,7 +4,3 @@
 ```javascript
     cout << carrots;
 ```
-
-
-
-🔚
