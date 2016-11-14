@@ -23,3 +23,5 @@
         cout << "Simon says touch your toes" << n << " times." << endl;
     }
 ```
+
+&emsp;&emsp;● 将 `using namespace std` 放在函数定义之前，让文件中所有的函数都能够使用名称空间 `std` 中所有的元素。
