@@ -37,6 +37,10 @@
 
 ####&emsp;&emsp;2. 换行符
 
+```javascript
+    cout << "What's next?\n";
+```
+
 
 
 
