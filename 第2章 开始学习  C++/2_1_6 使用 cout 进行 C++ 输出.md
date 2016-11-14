@@ -22,6 +22,6 @@
 
 &emsp;&emsp;`endl` 是一个特殊的 C++ 符号，表示：换行。`endl` 是在头文件 `iostream` 中定义的，且位于名称空间 `std` 中。
 
-**示例**
+&emsp;&emsp;**示例:**
 
 
