@@ -24,4 +24,9 @@
 
 &emsp;&emsp;**示例:**
 
-
+```javascript
+    cout << "The Good, the";
+    cout << "Bad, ";
+    cout << "and the Ukulele";
+    cout << endl;
+```
