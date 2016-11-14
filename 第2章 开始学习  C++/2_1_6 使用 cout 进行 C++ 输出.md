@@ -30,3 +30,7 @@
     cout << "and the Ukulele";
     cout << endl;
 ```
+&emsp;&emsp;输出如下：
+```javascript
+    The Good, theBad, and the Ukulele
+```
