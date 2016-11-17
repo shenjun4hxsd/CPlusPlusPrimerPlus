@@ -1,0 +1,1 @@
+##整型 short、int、long 和 longlong
