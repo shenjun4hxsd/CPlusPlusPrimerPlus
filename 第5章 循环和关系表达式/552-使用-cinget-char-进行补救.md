@@ -1,0 +1,1 @@
+使用 cin.get(char) 进行补救
