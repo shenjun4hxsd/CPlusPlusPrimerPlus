@@ -46,7 +46,36 @@
 ```
 
 
-##
+##示例：
+
+```javascript
+    #include <iostream>
+    #include <string>
+    #include <fstream>
+    #include <cstdlib>
+    
+    int main(int argc, const char * argv[]) {
+        using namespace std;
+        ifstream fin;
+        if(fin.is_open() == false)
+        {
+            cerr << "Can't open file. Bye.\n";
+            exit(EXIT_FAILURE);
+        }
+        string item;
+        int count = 0;
+        getline(fin, item, ':');
+        while (fin) { // while input is good
+            ++count;
+            cout << count << " : " << item << endl;
+            getline(fin, item, ':');
+        }
+        cout << "Done\n";
+        fin.close();
+        
+        return 0;
+    }
+```
 
 
 
