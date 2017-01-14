@@ -37,3 +37,12 @@
     cin.getline(fname, 10);   // 最多只获取9个字符的输入
     cout << fname << endl;
 ```
+
+
+
+
+
+
+
+
+
