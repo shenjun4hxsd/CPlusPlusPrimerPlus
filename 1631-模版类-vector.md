@@ -21,25 +21,25 @@
 ```
 
 ```javascript
-const int NUM = 5;
-int main()
-{
-    using namespace std;
-    vector<int> ratings(NUM);
-    vector<string> titles(NUM);
-
-    for (int i = 0; i < NUM; i++) {
-        cout << "输入Tile :" << i + 1 << endl;
-        getline(cin, titles[i]);
-        cout << "输入等级：" << i + 1 << endl;
-        cin >> ratings[i];
-        cin.get();
-    }
+    const int NUM = 5;
+    int main()
+    {
+        using namespace std;
+        vector<int> ratings(NUM);
+        vector<string> titles(NUM);
     
-    cout << "======" << endl;
-    
-    for (int i = 0; i < NUM; i++) {
-        cout << "Title :" << titles[i] << ", rating :" << ratings[i] << endl;
+        for (int i = 0; i < NUM; i++) {
+            cout << "输入Tile :" << i + 1 << endl;
+            getline(cin, titles[i]);
+            cout << "输入等级：" << i + 1 << endl;
+            cin >> ratings[i];
+            cin.get();
+        }
+        
+        cout << "======" << endl;
+        
+        for (int i = 0; i < NUM; i++) {
+            cout << "Title :" << titles[i] << ", rating :" << ratings[i] << endl;
+        }
     }
-}
 ```
