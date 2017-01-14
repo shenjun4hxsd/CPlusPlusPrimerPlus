@@ -38,7 +38,12 @@
     cout << fname << endl;
 ```
 
-
+```javascript
+    string lname;
+//    cin >> lname; // 输入的内容可以很长
+    getline(cin, lname);
+    cout << lname << endl;
+```
 
 
 
