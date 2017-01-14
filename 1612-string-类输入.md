@@ -28,3 +28,12 @@
     getline(cin, stuff, ':');   
     cout << stuff << endl;
 ```
+
+3、比较
+
+```javascript
+    char fname[10];
+    cin >> fname;             // 如果输入的内容大于9个会产生问题
+    cin.getline(fname, 10);   // 最多只获取9个字符的输入
+    cout << fname << endl;
+```
