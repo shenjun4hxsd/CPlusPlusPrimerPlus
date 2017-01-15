@@ -13,8 +13,11 @@ int main()
     using namespace std;
     
     string name = "shenjun";
-    
+    string age;
     cout << name << end;
+    cin >> age;
+    
+    name[0] = 'S';
     
     return 0;
 }
