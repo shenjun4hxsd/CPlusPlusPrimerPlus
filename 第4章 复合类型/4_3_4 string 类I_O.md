@@ -8,3 +8,5 @@
     cin.getline(charr, 20);
     getline(cin, str);
 ```
+
+🔚
