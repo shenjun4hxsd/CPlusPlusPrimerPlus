@@ -5,20 +5,21 @@
 可以使用cout来显示string对象。
 可以使用数组表示法来访问存储在string对象中的字符。
 
-
-#include <string>
-
-int main()
-{
-    using namespace std;
+```javascript
+    #include <string>
     
-    string name = "shenjun";
-    name[0] = 'S';
-    cout << name << end;
-
-    string age;
-    cin >> age;
-    cout << age << endl; 
+    int main()
+    {
+        using namespace std;
+        
+        string name = "shenjun";
+        name[0] = 'S';
+        cout << name << end;
     
-    return 0;
-}
+        string age;
+        cin >> age;
+        cout << age << endl; 
+        
+        return 0;
+    }
+```
