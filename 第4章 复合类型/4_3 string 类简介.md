@@ -18,8 +18,7 @@ int main()
 
     string age;
     cin >> age;
-    cout << age << endl;
-    
+    cout << age << endl; 
     
     return 0;
 }
