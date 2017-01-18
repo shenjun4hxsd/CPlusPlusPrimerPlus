@@ -42,3 +42,16 @@ queue 的基本操作有：
         访问队尾元素，如例：q.back()，即最后被压入队列的元素。
         判断队列空，如例：q.empty()，当队列空时，返回true。
         访问队列中的元素个数，如例：q.size()
+        
+        
+          queue<int> q;
+        for (int i = 0; i < 10; i++) {
+            q.push(i);
+        }
+        
+        printf("size = %ld\n", q.size());
+        
+        while (!q.empty()) {
+            printf("%d\n", q.front());
+            q.pop();
+        }
