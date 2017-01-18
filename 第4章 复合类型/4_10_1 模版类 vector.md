@@ -114,4 +114,20 @@ top() 返回栈顶元素
         unique() 删除list中重复的元素
         
         
+        list<int> p;
+        for (int i = 0; i < 10; i++) {
+            p.push_back(i);
+//            p.push_front(i);
+        }
+        
+        p.insert(p.begin()++, 4, 100);
+
+        p.erase(p.begin()++);
+        
+        while (!p.empty()) {
+            printf("size = %d\n", p.front());
+            p.pop_front();
+        }
+        
+        
 🔚
