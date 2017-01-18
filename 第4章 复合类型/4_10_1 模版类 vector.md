@@ -131,7 +131,12 @@ top() 返回栈顶元素
         
 ###map
 
-        
+        map<int, int> p;
+        p[0] = 100;
+        p[1] = 200;
+        p.insert(map<int, int>::value_type(1, 100));
+        map<int, int>::iterator it = p.find(1);
+        printf("key = %d, value = %d\n", it->first, it->second);  
                 
         
 🔚
