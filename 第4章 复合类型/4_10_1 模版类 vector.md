@@ -55,3 +55,16 @@ queue 的基本操作有：
             printf("%d\n", q.front());
             q.pop();
         }
+        
+        
+###Stack
+
+empty() 堆栈为空则返回真
+
+pop() 移除栈顶元素
+
+push() 在栈顶增加元素
+
+size() 返回栈中元素数目
+
+top() 返回栈顶元素
