@@ -44,7 +44,7 @@ queue 的基本操作有：
         访问队列中的元素个数，如例：q.size()
         
         
-          queue<int> q;
+        queue<int> q;
         for (int i = 0; i < 10; i++) {
             q.push(i);
         }
