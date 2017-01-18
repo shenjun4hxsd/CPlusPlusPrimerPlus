@@ -1,3 +1,5 @@
+```
+
 void preOrder2(BinTree *root)     //非递归前序遍历 
 {
     stack<BinTree*> s;
@@ -78,3 +80,5 @@ void postOrder2(BinTree *root)    //非递归后序遍历
         }
     }    
 } 
+
+```
