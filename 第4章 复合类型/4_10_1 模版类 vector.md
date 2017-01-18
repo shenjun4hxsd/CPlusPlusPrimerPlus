@@ -68,3 +68,16 @@ push() 在栈顶增加元素
 size() 返回栈中元素数目
 
 top() 返回栈顶元素
+
+
+        stack<int> p;
+        for (int i = 0; i < 10; i++) {
+            p.push(i);
+        }
+        
+        printf("size = %ld\n", p.size());
+        
+        while (!p.empty()) {
+            printf("%d\n", p.top());
+            p.pop();
+        }
