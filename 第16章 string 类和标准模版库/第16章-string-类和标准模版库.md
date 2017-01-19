@@ -94,6 +94,17 @@ void postOrder2(BinTree *root)    //非递归后序遍历
 //  Copyright © 2017年 ShenJun. All rights reserved.
 //
 
+
+typedef struct TreeNode
+{
+    TreeNode() : lch(0), rch(0), data('\0'){}
+    TreeNode* lch;
+    TreeNode* rch;
+    char data;
+} *Node;
+
+
+
 #include "CTree.hpp"
 
 
