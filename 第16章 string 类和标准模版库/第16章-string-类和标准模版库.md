@@ -82,3 +82,132 @@ void postOrder2(BinTree *root)    //非递归后序遍历
 } 
 
 ```
+
+
+
+```javascript
+//
+//  CTree.cpp
+//  Lesson3
+//
+//  Created by ShenJun on 2017/1/19.
+//  Copyright © 2017年 ShenJun. All rights reserved.
+//
+
+#include "CTree.hpp"
+
+
+void CreatTree(Node& T)  // 从根节点开始实现
+{
+    T = new TreeNode();
+    
+    std::cout << "Enter the Number :" ;
+    std::cin >> T->data;
+    
+    if(T->data == '#')
+    {
+        delete T;
+        T = 0;
+    }
+    else
+    {
+        CreatTree(T->lch);
+        CreatTree(T->rch);
+    }
+}
+
+// 递归前序遍历
+void preOrder(Node& T)
+{
+    if(T != NULL)
+    {
+        printf("%c", T->data);
+        preOrder(T->lch);
+        preOrder(T->rch);
+    }
+}
+
+void inOrder(Node& T)
+{
+    if(T != NULL)
+    {
+        inOrder(T->lch);
+        printf("%c", T->data);
+        inOrder(T->rch);
+    }
+}
+
+void postOrder(Node& T)
+{
+    if(T != NULL)
+    {
+        postOrder(T->lch);
+        postOrder(T->rch);
+        printf("%c", T->data);
+    }
+}
+
+
+
+void pre_order(Node& T)
+{
+    std::stack<Node>* m_pStack = new std::stack<Node>();
+    while (T != NULL || !m_pStack->empty()) {
+        if(T != NULL)
+        {
+            printf("%c", T->data);
+            m_pStack->push(T->rch);
+            T = T->lch;
+        }
+        else
+        {
+            T = m_pStack->top();
+            m_pStack->pop();
+        }
+    }
+    delete m_pStack;
+    m_pStack = NULL;
+}
+
+// 非递归中序遍历
+void in_order(Node& T)
+{
+    std::stack<Node>* m_pStack = new std::stack<Node>();
+    while (T != NULL || !m_pStack->empty()) {
+        if(T != NULL)
+        {
+            m_pStack->push(T);
+            T = T->lch;
+        }
+        else
+        {
+            T = m_pStack->top();
+            printf("%c", T->data);
+            m_pStack->pop();
+            T = T->rch;
+        }
+    }
+    delete m_pStack;
+    m_pStack = NULL;
+}
+
+// 删除
+void ClearTree(Node& T)
+{
+    ClearTree(T->lch);
+    ClearTree(T->rch);
+    delete T;
+}
+
+void TreeMain()
+{
+    
+    TreeNode *pRoot = new TreeNode();
+    CreatTree(pRoot);
+//  preOrder(pRoot);
+//  pre_order(pRoot);
+    in_order(pRoot);
+}
+```
+
+
